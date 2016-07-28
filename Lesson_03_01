@@ -1,0 +1,15 @@
+# Elapsed time in code execution
+
+import time
+
+strt = time.time()
+
+word = "kanishk sharan"
+
+dic = {a:word.count(a) for a in word}
+print (dic)
+
+end_time = time.time()
+elapsed_time = end_time - strt
+
+print (elapsed_time)
