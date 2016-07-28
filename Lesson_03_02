@@ -7,3 +7,18 @@ def factorial_recursive(n):
         return n * factorial_recursive(n-1)
 
 print (factorial_recursive(4))
+
+
+# Conventional method
+
+def factorial(n):
+    fact = 1
+    counter = n
+    if n == 0:
+        return 1
+    else:
+        for counter in range (1,counter+1):
+            fact = fact * counter
+        return ("factorial of %d = %d" %(n,fact))
+
+print (factorial(4))
