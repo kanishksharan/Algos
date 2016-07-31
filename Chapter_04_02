@@ -1,0 +1,15 @@
+# Fibonacci generation
+
+import sys
+
+def fibonacci( ):
+    a = 0
+    b = 1
+    while a < 20: # keep going...
+        print (a) # report value, a, during this pass
+        future = a + b
+        a = b # this will be next value reported
+        b = future
+       
+
+print (fibonacci())
