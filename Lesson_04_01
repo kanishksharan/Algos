@@ -1,0 +1,30 @@
+# Binary Search Chapter 4
+
+import time
+
+test_array = [i for i in range (1,30,2)]
+print (len(test_array),test_array)
+
+strt_time = time.time()
+
+
+def binary_search (arr,target,low,high):
+
+    if low > high:
+        print ("The Array is not sorted")
+
+    else:
+        mid = (low+high)//2
+        if target == arr[mid]:
+            return arr.index (target) + 1
+        elif target < arr[mid]:
+            return binary_search (arr,target,low,mid-1)
+        else:
+            return binary_search (arr,target,mid+1,high)
+        
+end_time = time.time()
+elapsed_time = end_time - strt_time
+print (elapsed_time)
+
+print (binary_search(test_array,29,0,14))
+
