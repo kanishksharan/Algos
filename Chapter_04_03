@@ -1,0 +1,15 @@
+# Linear Search
+
+import time
+import sys
+
+strt_time = time.time()
+target_array = [48,88,3,81,92,64,44,96]
+
+def linear_search (arr,target):
+	for i in arr:
+		if i == target:
+			print ("The target element %s was located at the index %s" %(target,arr.index(i)+1))
+	return time.time() - strt_time
+
+print (linear_search(target_array,44))
