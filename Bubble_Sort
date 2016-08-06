@@ -1,0 +1,14 @@
+# Bubble Sort
+
+def bubble_sort (arr):
+	for i in range(0,len(arr)-1):
+		for j in range (0,len(arr)-1-i):
+
+			currNum = arr[j]
+			if arr[j] > arr[j+1]:
+				arr[j] = arr[j+1]
+				arr[j+1] = currNum
+			print (arr)
+
+test_array = [87,23,12,56,90,4,9]
+print (bubble_sort(test_array))
