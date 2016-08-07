@@ -1,0 +1,17 @@
+# Brute Forcing Max Sum Subarray
+
+def brute_force_max_array (arr):
+    maximum = 0
+
+    for i in range (0, len(arr)):
+        currNum = 0
+
+        for j in range (i,len(arr)):
+            currNum += arr[j]
+            if currNum > maximum:
+                maximum = currNum
+    return (maximum)
+
+
+test_array = [3,-2,5,-1]
+print (brute_force_max_array(test_array))
